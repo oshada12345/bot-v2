@@ -1093,7 +1093,7 @@ Zex.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome
 break
 
 
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'hi': case '*': case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
