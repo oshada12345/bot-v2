@@ -12,27 +12,27 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //Owner Setting
-global.owner = ['6283890422366'] //Owner Number
-global.ownernomer = "6283890422366" //Owner Number 02
-global.ownername = "Zakk." //Owner NMe
-global.ytname = "YouTube: https://www.youtube.com/@kizakixd" //YouTube Owner
-global.socialm = "GitHub: https://github.com/KiZakiXD" //Github Owner
-global.location = "🇮🇩 Indonesia" //Country
+global.owner = ['94703698781'] //Owner Number
+global.ownernomer = "94703698781" //Owner Number 02
+global.ownername = "O S H A D A." //Owner NMe
+global.ytname = "YouTube: https://www.youtube.com/@" //YouTube Owner
+global.socialm = "GitHub: https://github.com/" //Github Owner
+global.location = "Sri Lanka" //Country
 
 //Bot Setting
 global.botname = "Zex Simple WhatsApp Bot"
-global.ownernumber = '6283890422366'
-global.ownername = 'Zakk.'
-global.ownerNumber = ["6283890422366@s.whatsapp.net"]
+global.ownernumber = '94703698781'
+global.ownername = 'O S H A D A.'
+global.ownerNumber = ["94703698781@s.whatsapp.net"]
 global.ownerweb = "https://my.zey-id.xyz"
-global.websitex = "https://instagram.com/iamkizakixd"
-global.wagc = "https://chat.whatsapp.com/GMcv3SpmwOz9S6aQzYmUD1"
+global.websitex = "https://instagram.com/"
+global.wagc = "https://chat.whatsapp.com/"
 global.themeemoji = '🚩'
-global.wm = "Follow Instagram : @iamkizakixd"
-global.botscript = 'https://www.youtube.com/@kizakixd' //script link
+global.wm = "Follow Instagram : @"
+global.botscript = 'https://www.youtube.com/@' //script link
 global.packname = "Sticker By"
 global.author = "Zex Simple Bot WhatsApp"
-global.creator = "6283890422366@s.whatsapp.net"
+global.creator = "94703698781@s.whatsapp.net"
 global.prefa = ['','!','.','#','&','`']
 global.hituet = 0
 global.apikeyai = '' //Apikey OpenAi Kalian
