@@ -20,7 +20,7 @@ global.socialm = "GitHub: https://github.com/" //Github Owner
 global.location = "Sri Lanka" //Country
 
 //Bot Setting
-global.botname = "Zex Simple WhatsApp Bot"
+global.botname = "⛤S A T A N ⛤ B O T⛤"
 global.ownernumber = '94703698781'
 global.ownername = 'O S H A D A.'
 global.ownerNumber = ["94703698781@s.whatsapp.net"]
@@ -30,8 +30,8 @@ global.wagc = "https://chat.whatsapp.com/"
 global.themeemoji = '🚩'
 global.wm = "Follow Instagram : @"
 global.botscript = 'https://www.youtube.com/@' //script link
-global.packname = "Sticker By"
-global.author = "Zex Simple Bot WhatsApp"
+global.packname = "⛤Sticker By⛤"
+global.author = "⛤S A T A N ⛤ B O T⛤"
 global.creator = "94703698781@s.whatsapp.net"
 global.prefa = ['','!','.','#','&','`']
 global.hituet = 0
