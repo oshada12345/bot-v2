@@ -1059,7 +1059,7 @@ switch (command) {
             break
 case 'rentbot': {
 if (m.isGroup) return replygcxeon(mess.private)
-if (!isPrem) return replyprem(mess.premium)
+
 rentfromxeon(Zex, m, from)
 }
 break
@@ -1091,6 +1091,8 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 Zex.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
+
+
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
@@ -1464,7 +1466,7 @@ m.reply('Terjadi Kesalahan')
 break
 case 'ai-img':
 if (!text) return m.reply('*Contoh=* .ai-img sunset mountain')
-if (!isPrem) return replyprem(mess.premium)
+
 m.reply(mess.wait)
 const configuration = new Configuration({ apiKey: apikeyai });
 const openai = new OpenAIApi(configuration);
@@ -1692,7 +1694,7 @@ break
          	}
          break
 case 'igstalk':{
-if (!isPrem) return replyprem(mess.premium)
+
 if (!q) return replygcxeon(`Example ${prefix+command} unicorn_xeon`)
 replygcxeon(mess.wait)
 aj = await igstalk(`${q}`)
@@ -1708,7 +1710,7 @@ Bio : ${aj.bio}` }, { quoted: m } )
 }
 break
 case 'ffstalk':{
-if (!isPrem) return replyprem(mess.premium)
+
 if (!q) return replygcxeon(`Example ${prefix+command} 946716486`)
 replygcxeon(mess.wait)
 eeh = await ffstalk.ffstalk(`${q}`)
@@ -1719,7 +1721,7 @@ Nickname : ${eeh.nickname}`)
 }
 break
 case 'mlstalk': {
-if (!isPrem) return replyprem(mess.premium)
+
 if (!q) return replygcxeon(`Example ${prefix+command} 530793138|8129`)
 replygcxeon(mess.wait)
 let dat = await mlstalk.mlstalk(q.split("|")[0], q.split("|")[1])
@@ -3073,7 +3075,7 @@ case 'wink': case 'poke': case 'nom': case 'slap': case 'smile':
 case 'wave': case 'awoo': case 'blush': case 'smug': case 'glomp': 
 case 'happy': case 'dance': case 'cringe': case 'cuddle': case 'highfive': 
 case 'shinobu': case 'handhold': {
-if (!isPrem) return replyprem(mess.premium)
+
 axios.get(`https://api.waifu.pics/sfw/${command}`)
 .then(({data}) => {
 Zex.sendImageAsSticker(from, data.url, m, { packname: global.packname, author: global.author })
@@ -3389,7 +3391,7 @@ fs.unlinkSync(ran)
 }
 break
 case 'swm': case 'steal': case 'stickerwm': case 'take':{
-if (!isPrem) return replyprem(mess.premium)
+
 if (!args.join(" ")) return replygcxeon(`Where is the text?`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0];
@@ -3652,7 +3654,6 @@ case 'sand':
 case 'glue': 
 case '1917': 
 case 'leaves': {
-if (!isPrem) return replyprem(mess.premium)
 if (!q) return replygcxeon(`Example : ${prefix+command} Zex`) 
 replygcxeon(mess.wait)
 let link
@@ -3747,7 +3748,7 @@ case 'royaltext':
 case 'freecreate':
 case 'galaxystyle':
 case 'lighteffects':{
-if (!isPrem) return replyprem(mess.premium)
+
 if (!q) return replygcxeon(`Example : ${prefix+command} Zex`) 
 replygcxeon(mess.wait)
 let link
@@ -3812,7 +3813,7 @@ case 'rosestext':
 case 'naturetypography':
 case 'quotesunder':
 case 'shinetext':{
-if (!isPrem) return replyprem(mess.premium)
+
 if (!q) return replygcxeon(`Example : ${prefix+command} Zex`) 
 replygcxeon(mess.wait)
 let link
@@ -4127,7 +4128,7 @@ const i = Math.floor(Math.random() * wallpaper.length);
 //Zex.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
 break
 case 'akira': case 'akiyama': case 'ana': case 'art': case 'asuna': case 'ayuzawa': case 'boruto': case 'bts': case 'chiho': case 'chitoge': case 'cosplay': case 'cosplayloli': case 'cosplaysagiri': case 'cyber': case 'deidara': case 'doraemon': case 'elaina': case 'emilia': case 'erza': case 'exo':  case 'gamewallpaper': case 'gremory': case 'hacker': case 'hestia': case 'hinata': case 'husbu': case 'inori': case 'islamic': case 'isuzu': case 'itachi': case 'itori': case 'jennie': case 'jiso': case 'justina': case 'kaga': case 'kagura': case 'kakasih': case 'kaori': case 'cartoon': case 'shortquote': case 'keneki': case 'kotori': case 'kurumi': case 'lisa': case 'loli': case 'madara': case 'megumin': case 'mikasa': case 'mikey': case 'miku': case 'minato': case 'mountain': case 'naruto': case 'neko': case 'neko2': case 'nekonime': case 'nezuko': case 'onepiece': case 'pentol': case 'pokemon': case 'programming':  case 'randomnime': case 'randomnime2': case 'rize': case 'rose': case 'sagiri': case 'sakura': case 'sasuke': case 'satanic': case 'shina': case 'shinka': case 'shinomiya': case 'shizuka': case 'shota': case 'space': case 'technology': case 'tejina': case 'toukachan': case 'tsunade': case 'waifu': case 'yotsuba': case 'yuki': case 'yulibocil': case 'yumeko':{
-if (!isPrem) return replyprem(mess.premium)
+
 replygcxeon(mess.wait)
 let heyy
 if (/akira/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/media/master/akira.json')
@@ -4374,7 +4375,7 @@ case 'pushcontact': {
 	    break
 	case 'hentaivid2': {
 if (!m.isGroup) return m.reply(mess.group)
-if (!isPrem) return replyprem(mess.premium)
+
 if (!AntiNsfw) return m.reply(mess.nsfw)
 replygcxeon(mess.wait)
 sbe = await hentaivid()
