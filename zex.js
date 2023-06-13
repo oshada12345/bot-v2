@@ -1171,7 +1171,7 @@ mentionedJid:[sender],
 }
 break
 case 'ownermenufirst': {
-	var unicorn = await getBuffer(picak+'OWner MEnuFirst')
+	var unicorn = await getBuffer(picak+'Owner Menu')
 	sendZexMessage(from, { 
 	text: `🚩 Hi @${sender.split("@")[0]}\n\n${ownermenufirst(prefix, hituet)}, This Is A List Of Owner Menus In The Bot`,
 	mentions:[sender],
@@ -1466,7 +1466,6 @@ break
 case 'ai':
 try {
 if (!text) return reply(`Chat dengan AI.\n\nContoh:\n${prefix}${command} Apa itu resesi`)
-if (!isPrem) return replyprem(mess.premium)
 const configuration = new Configuration({ apiKey: apikeyai });
 const openai = new OpenAIApi(configuration);                
 const response = await openai.createCompletion({
@@ -1663,7 +1662,7 @@ await Zex.sendMessage(m.chat, { audio: Zex_dev, mimetype: 'audio/mp4', ptt: true
 break
 case 'friend':
 case 'searchfriend':{
-if (!isPrem) return replyprem(mess.premium)
+
 let teman = pickRandom(xeonverifieduser)
 setTimeout(() => {
 replygcxeon(mess.wait)
