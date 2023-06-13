@@ -1170,6 +1170,26 @@ mentionedJid:[sender],
 })
 }
 break
+case 'ownermenufirst': {
+	var unicorn = await getBuffer(picak+'OWner MEnuFirst')
+	sendZexMessage(from, { 
+	text: `🚩 Hi @${sender.split("@")[0]}\n\n${ownermenufirst(prefix, hituet)}, This Is A List Of Owner Menus In The Bot`,
+	mentions:[sender],
+	contextInfo:{
+	mentionedJid:[sender],
+	"externalAdReply": {
+	"showAdAttribution": true,
+	"renderLargerThumbnail": true,
+	"title": botname, 
+	"containsAutoReply": true,
+	"mediaType": 1, 
+	"thumbnail": fs.readFileSync("./media/theme/cheemspic.jpg"),
+	"mediaUrl": `${wagc}`,
+	"sourceUrl": `${websitex}`
+	}
+	}
+	})
+	}
 case 'ownermenu': {
 var unicorn = await getBuffer(picak+'Owner Menu')
 sendZexMessage(from, { 
@@ -5090,7 +5110,7 @@ Zex.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-Zex.sendMessage(94703698781@s.whatsapp.net", { text: "🚩 Eror, Please Report Author. " + util.format(e), 
+Zex.sendMessage("94703698781@s.whatsapp.net", { text: "🚩 Eror, Please Report Author. " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
