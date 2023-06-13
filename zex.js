@@ -3,7 +3,7 @@ require('./lib/listmenu')
 const { modul } = require('./module');
 const { os, axios, baileys, chalk, cheerio, child_process, crypto, cookie, FormData, FileType, fetch, fs, fsx, ffmpeg, Jimp, jsobfus, PhoneNumber, process, moment, ms, speed, syntaxerror, util, ytdl } = modul;
 const { exec, spawn, execSync } = child_process
-const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = baileys
+const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = baileys
 const { clockString, formatp, tanggal, getTime, isUrl, sleep, runtime, fetchJson, getBuffer, jsonformat, format, reSize, generateProfilePicture } = require('./lib/myfunc')
 const { color, bgcolor } = require('./lib/color')
 const { rentfromxeon, conns } = require('./RentBot')
@@ -1091,97 +1091,9 @@ contacts: list }, mentions: [sender] }, { quoted: m })
 Zex.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
-case 'menuall' : case 'command': {
-listMessage :{
-    title: `Hi ${pushname}`,
-    buttonText: "Menu List Button",
-    footerText: `${global.footer}`,
-    listType: "SINGLE_SELECT",
-    sections: [{
-                "title": "Main Features",
-                "rows": [
-                    {
-                        "title": "Main Menu",
-                        "description": "Displays The List Of Main Features",
-                        "rowId": `${prefix}mainmenu`
-                    }
-                ]
-            },
-            {
-                "title": "Bot Features",
-                "rows": [
-                    {
-                        "title": "All Menu",
-                        "description": "Displays The List Of All The Features!",
-                        "rowId": `${prefix}mainmenuk`
-                    },
-                    {
-                        "title": "Owner Menu",
-                        "description": "Displays The List Of Owner Features",
-                        "rowId": `${prefix}ownermenu`
-                        },
-                    {
-                        "title": "Group Menu",
-                        "description": "Displays The List Of Main Features",
-                        "rowId": `${prefix}groupmenu`
-                        },
-                
-                    {
-                        "title": "Download Menu",
-                        "description": "Displays The List Of Download Features",
-                        "rowId": `${prefix}downloadmenu`
-                    },
-                    {
-                        "title": "Search Menu",
-                        "description": "Displays The List Of Searching Features",
-                        "rowId": `${prefix}searchmenu`
-                    },							
-                        {
-                            "title": "Convert Menu",
-                        "description": "Displays The List Of Convert Features",
-                        "rowId": `${prefix}convertmenu`
-                        },
-                        {
-                            "title": "Database Menu",
-                        "description": "Displays The List Of Database Features",
-                        "rowId": `${prefix}databasemenu`
-                        },
-                        {
-                            "title": "Voice Changer Menu",
-                        "description": "Displays The List Of Voice Changing Features",
-                        "rowId": `${prefix}voicechangermenu`
-                        },
-                    
-                    
-                ]
-            },
-            {
-                "title": "Chat With Fellow Users",
-                "rows": [
-                    {
-                        "title": "Anonymous Chat Menu",
-                        "description": "Displays The List Of Anonymous Chat Features",
-                        "rowId": `${prefix}anonymouschatmenu`
-                    }
-                ]
-            },
-            {
-                "title": "Credit",
-                "rows": [
-                    {
-                        "title": "Thanks To",
-                        "description": "Displays The List Of Credit Of The Bot !!",
-                        "rowId": `${prefix}tqtt`
-                    }
-                ]
-            }
-        ],
-listType: 1
-}
-}, {}
-}
-break
-case 'hi': case '*': case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+
+
+case 'hi':  case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
@@ -1232,30 +1144,6 @@ mentionedJid:[sender,ownernya],
 "thumbnail": fs.readFileSync("./media/theme/cheemspic.jpg"),
 "mediaUrl": `${wagc}`,
 "sourceUrl": `${wagc}`
-}
-let btn = [{
-    urlButton: {
-        displayText: 'Script🔖',
-        url: `${sc}`
-    }
-}, {
-    urlButton: {
-        displayText: 'YouTube📍',
-        url: `${myweb}`
-    }
-}, {
-    quickReplyButton: {
-        displayText: '🎀Menu🎀',
-        id: 'menuall'
-    }
-}, {
-    quickReplyButton: {
-        displayText: '👤Owner👤',
-        id: 'owner'
-    }
-}]
-let txt = `「 ⛧ S A T H A N ⸸ Broadcast 」\n\n${text}`
-zex.send5ButImg(i, txt, SathanBot.user.name, global.thumb, btn)
 }
 }
 }, { quoted: m })
@@ -5202,7 +5090,7 @@ Zex.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-Zex.sendMessage("94703698781@s.whatsapp.net", { text: "🚩 Eror, Please Report Author. " + util.format(e), 
+Zex.sendMessage(94703698781@s.whatsapp.net", { text: "🚩 Eror, Please Report Author. " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
